@@ -21,4 +21,8 @@ class Event
   def food_trucks_that_sell(item)
     @food_trucks.find_all {|truck| truck.inventory.include?(item)}
   end
+
+  def total_inventory
+    @food_trucks.reduce({}) do |collect, (item, food_truck)|
+      collect[food_truck.item]
 end
