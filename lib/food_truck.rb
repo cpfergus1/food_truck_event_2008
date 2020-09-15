@@ -9,6 +9,6 @@ class FoodTruck
     @inventory = {}
   end
 
-
+  
 
 end
